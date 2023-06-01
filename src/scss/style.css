@@ -705,13 +705,13 @@ padding-left: 16px;
     height: 180px;
   }
   100% {
-    height: 377px;
+    height: 567px;
   }
 }
 
 @keyframes closed__Device {
   0% {
-    height: 377px;
+    height: 567px;
   }
   100% {
     height: 180px;
@@ -765,6 +765,24 @@ padding-left: 16px;
 
 
 @media (min-width: 1120px) {
+
+  @keyframes open__expanded--Device {
+    0% {
+      height: 180px;
+    }
+    100% {
+      height: 377px;
+    }
+  }
+  
+  @keyframes closed__Device {
+    0% {
+      height: 377px;
+    }
+    100% {
+      height: 180px;
+    }
+  }
 
 .brands__item {
     width: 240px;
