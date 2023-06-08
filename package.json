@@ -18,7 +18,8 @@
     "deploy": "gh-pages -d dist",
     "dev": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open",
-    "watch": "webpack --mode development --watch"
+    "watch": "webpack --mode development --watch",
+    "clear": "rd /s /q dist"
   },
   "browserslist": [
     "last 2 versions",
