@@ -13,74 +13,69 @@ const burger = document.querySelector('.header__burger');
 const aside = document.querySelector('.aside');
 const burgerClosed = document.querySelector('.burger__bth');
 
+const shadow = document.querySelector('.shadow')
 
 
-const openFeedbac = (event) => {
+// document.addEventListener('click', (e) => {
+//   const click = e.composedPath();
+//   console.log(click);
+// })
+
+
+const openFeedback = () => {
 	feedback.classList.add('open')
-    let div = document.createElement('div');
-    div.className = 'shadow';
-    document.body.prepend(div);
+  shadow.style.display = 'block';
 };
 
-const closedFeedback = (event) => {
+const closedFeedback = () => {
 	feedback.classList.remove('open');
-    let div = document.querySelector('.shadow');
-    div.remove();
+  shadow.style.display = 'none';
 };
 
-window.addEventListener('keydown', (e) => {
-	if (e.key === 'Escape') { 
-		feedback.classList.remove('open')
-    let div = document.querySelector('.shadow');
-    div.remove();
-	}
-});
 
 
-const openCall = (event) => {
+
+const openCall = () => {
 	call.classList.add('open')
-  let div = document.createElement('div');
-  div.className = 'shadow';
-  document.body.prepend(div);
+  shadow.style.display = 'block';
 };
 
-const closedCall = (event) => {
+const closedCall = () => {
 	call.classList.remove('open');
-  let div = document.querySelector('.shadow');
-  div.remove();
+  shadow.style.display = 'none';
 };
-
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') { 
-		call.classList.remove('open')
-    let div = document.querySelector('.shadow');
-    div.remove();
-	}
-});
   
 
-const openBurger = (event) => {
+const openBurger = () => {
   aside.classList.add('open')
 };
   
-const closedBurder = (event) => {
+const closedBurder = () => {
   aside.classList.remove('open')
 }
-
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') { 
-    aside.classList.remove('open')
-  }
-});
   
+
+const clickShadow = () => {
+  call.classList.remove('open');
+  feedback.classList.remove('open');
+  shadow.style.display = 'none';
+}
+
+
+  
+shadow.addEventListener('click', clickShadow);
+
+
 burger.addEventListener("click", openBurger);
 burgerClosed.addEventListener("click", closedBurder);
-  
+
+
+
 asideCall.addEventListener("click", openCall); // Открывает заказать звонок aside
 headerCall.addEventListener("click", openCall); //  Открывает заказать звонок header
 callClosed.addEventListener("click", closedCall); // Закрывает заказать звонок 
 
-asideChat.addEventListener("click", openFeedbac); // Открывает обратную связь в aside
-headerChatBth.addEventListener("click", openFeedbac); // Открывает обратную связь в header
+asideChat.addEventListener("click", openFeedback); // Открывает обратную связь в aside
+headerChatBth.addEventListener("click", openFeedback); // Открывает обратную связь в header
 feedbackClosed.addEventListener("click", closedFeedback); // Закрывает обратную связь
 

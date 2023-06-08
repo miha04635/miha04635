@@ -16,22 +16,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	const comma = document.querySelector(".comma");
 
 
-	if (window.matchMedia("(max-width: 700px)").matches) {
-		let swiper = new Swiper(".mySwiper", {
-		  slidesPerView: "auto",
-		  spaceBetween: 30,
-		  pagination: {
-		  el: ".swiper-pagination",
-		  clickable: true,
-		  },
-		});
-	  }
+
 
 const handleClick = (event) => {
   if (container.classList.contains("expanded")) {
-	showMoreButton.innerHTML = "Показать всё";
+	showMoreButton.textContent = "Показать всё";
   } else {
-	showMoreButton.innerHTML = "Скрыть";
+	showMoreButton.textContent = "Скрыть";
   }
 };
 
