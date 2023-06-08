@@ -2,8 +2,8 @@
 @import '../scss/style.css';
 @import '../scss/feedback.scss';
 @import '../scss/index.css';
+@import '../scss/services-all.css';
 @import '../scss/fonts.scss';
-@import '../scss/services.css';
 
 @import '/node_modules/swiper/swiper.css';
 
@@ -27,4 +27,18 @@
         margin: 10px 0 0 0;
     }    
 }
+
+// @media (min-width: 1440px) {
+//     .app {
+//         max-width: 1650px;
+//         margin: 0 auto;
+//     }
+// }
+
+
+
+
+
+
+// @import '/webpack-static-template/node_modules/swiper/swiper-bundle.css';
 

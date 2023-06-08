@@ -258,62 +258,101 @@
               <button class="Device__show-more--bth">Показать всё</button>
           </div>
           <h2 class="services__title">ЦЕНЫ НА УСУЛГИ</h2>
-          <div class="tum">
-            <p class="tum__services">Ремонтные услуги</p>
-            <p class="tum__services">Цена</p>
-            <p class="tum__services">Срок</p>
-            <p class="tum__services"></p>
-        </div>
-        <div class="services">
-            <div class="swiper-wrapper services__wrapper">
-                <div class="swiper-slide services__slide">
-                    <p class="services__text--grey">Ремонтные услуги</p>
-                    <p class="services__text">Диагностика</p>
-                    <p class="services__text--grey">Цена</p>
-                    <p class="services__text">Бесплатно</p>
-                    <p class="services__text--grey">Срок</p>
-                    <p class="services__text">30 мин</p>
-                    <button class="bth">ЗАКАЗАТЬ</button>
+          <div class="swiper mySwiper services">
+            <div class="swiper-wrapper services__list">
+              <div class="swiper-slide services__item">
+                <p class="services__text repair">Ремонтные услуги<span>Диагностика</span></p>
+                <p class="services__text price">Цена<span>Бесплатно</span></p>
+                <p class="services__text time">Срок<span>30 мин</span></p>
+                <button class="services__bth">
+                  <img src="./img/bay.svg" alt="Заказать">
+                </button>
+              </div>
+              <div class="swiper-slide services__item">
+                <p class="services__text repair">Ремонтные услуги<span>Замена дисплея</span></p>
+                <p class="services__text price">Цена<span>1000</span></p>
+                <p class="services__text time">Срок<span>30-120 мин</span></p>
+                <button class="services__bth">
+                  <img src="./img/bay.svg" alt="Заказать">
+                </button>
+              </div>
+              <div class="swiper-slide services__item">
+                <p class="services__text repair">Ремонтные услуги<span>Замена полифонического динамика</span></p>
+                <p class="services__text price">Цена<span>1000</span></p>
+                <p class="services__text time">Срок<span>30-120 мин</span></p>
+                <button class="services__bth">
+                  <img src="./img/bay.svg" alt="Заказать">
+                </button>
+              </div>
+              <div class="swiper-slide services__item">
+                <p class="services__text repair">Ремонтные услуги<span>Замена программного обеспечения</span></p>
+                <p class="services__text price">Цена<span>1000</span></p>
+                <p class="services__text time">Срок<span>30-120 мин</span></p>
+                <button class="services__bth">
+                  <img src="./img/bay.svg" alt="Заказать">
+                </button>
+              </div>
+              <div class="swiper-slide services__item">
+                <p class="services__text repair">Ремонтные услуги<span>Тестирование с выдачей технического заключения</span></p>
+                <p class="services__text price">Цена<span>1000</span></p>
+                <p class="services__text time">Срок<span>30-120 мин</span></p>
+                <button class="services__bth">
+                  <img src="./img/bay.svg" alt="Заказать">
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- <div class="services-all">
+            <div class="tum">
+                <p class="tum__services">Ремонт</p>
+                <p class="tum__services">Цена</p>
+                <p class="tum__services">Срок</p>
+                <p class="tum__services"></p>
+            </div>
+            <div class="services__container">
+                <div class="services__one">
+                    <p class="services__one--text">Диагностика</p>
+                    <p class="services__one--text">Бесплатно</p>
+                    <p class="services__one--text">30 мин</p>
+                    <button>
+                        <img src="./img/bay.svg" alt="Заказать">
+                    </button>
                 </div>
-                <div class="swiper-slide services__slide">
-                    <p class="services__text--grey">Ремонтные услуги</p>
-                    <p class="services__text">Замена дисплея</p>
-                    <p class="services__text--grey">Цена</p>
-                    <p class="services__text">1 000 ₽</p>
-                    <p class="services__text--grey">Срок</p>
-                    <p class="services__text">30-120 мин</p>
-                    <button class="bth">ЗАКАЗАТЬ</button>
+                <div class="services__two">
+                    <p class="services__one--text">Замена дисплея</p>
+                    <p class="services__one--text">1 000 ₽</p>
+                    <p class="services__one--text">30-120 мин</p>
+                    <button>
+                        <img src="./img/bay.svg" alt="Заказать">
+                    </button>
                 </div>
-                <div class="swiper-slide services__slide">
-                    <p class="services__text--grey">Ремонтные услуги</p>
-                    <p class="services__text">Замена полифонического динамика</p>
-                    <p class="services__text--grey">Цена</p>
-                    <p class="services__text">1 000 ₽</p>
-                    <p class="services__text--grey">Срок</p>
-                    <p class="services__text">30-120 мин</p>
-                    <button class="bth">ЗАКАЗАТЬ</button>
+                <div class="services__three">
+                    <p class="services__one--text">Замена полифонического динамика</p>
+                    <p class="services__one--text">1 000 ₽</p>
+                    <p class="services__one--text">30-120 мин</p>
+                    <button>
+                        <img src="./img/bay.svg" alt="Заказать">
+                    </button>
                 </div>
-                <div class="swiper-slide services__slide">
-                    <p class="services__text--grey">Ремонтные услуги</p>
-                    <p class="services__text">Тестирование с выдачей технического заключения</p>
-                    <p class="services__text--grey">Цена</p>
-                    <p class="services__text">1 000 ₽</p>
-                    <p class="services__text--grey">Срок</p>
-                    <p class="services__text">30-120 мин</p>
-                    <button class="bth">ЗАКАЗАТЬ</button>
+                <div class="services__four">
+                    <p class="services__one--text">Тестирование с выдачей технического заключения</p>
+                    <p class="services__one--text">1 000 ₽</p>
+                    <p class="services__one--text">30-120 мин</p>
+                    <button>
+                        <img src="./img/bay.svg" alt="Заказать">
+                    </button>
                 </div>
-                <div class="swiper-slide services__slide">
-                    <p class="services__text--grey">Ремонтные услуги</p>
-                    <p class="services__text">Замена программного обеспечения</p>
-                    <p class="services__text--grey">Цена</p>
-                    <p class="services__text">1 000 ₽</p>
-                    <p class="services__text--grey">Срок</p>
-                    <p class="services__text">30-120 мин</p>
-                    <button class="bth">ЗАКАЗАТЬ</button>
+                <div class="services__five">
+                    <p class="services__one--text">Замена программного обеспечения</p>
+                    <p class="services__one--text">1 000 ₽</p>
+                    <p class="services__one--text">30-120 мин</p>
+                    <button>
+                        <img src="./img/bay.svg" alt="Заказать">
+                    </button>
                 </div>
             </div>
-            <div class="services-pagination"></div>
-        </div>
+        </div> -->
         <section class="offer">
           <p class="offer__text">
             Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 

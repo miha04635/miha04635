@@ -565,10 +565,10 @@ text-decoration: none;
 }
 
 .swiper-slide {
-
+text-align: center;
 background: #fff;
 display: flex;
-
+align-items: center;
 justify-content: space-between;
 border: 1px solid #EAEAEA;
 width: 240px;
@@ -628,9 +628,7 @@ padding-left: 16px;
   padding-top: 16px;
 }
 
-.brands__item {
-  padding-top: 16px;
-}
+
 
 @media (min-width: 768px) {
 .brands__list {
@@ -709,13 +707,13 @@ padding-left: 16px;
     height: 180px;
   }
   100% {
-    height: 529px;
+    height: 377px;
   }
 }
 
 @keyframes closed__Device {
   0% {
-    height: 529px;
+    height: 377px;
   }
   100% {
     height: 180px;
@@ -769,40 +767,7 @@ padding-left: 16px;
 
 
 @media (min-width: 1120px) {
-  @keyframes open__expanded--Device {
-    0% {
-      height: 180px;
-    }
-    100% {
-      height: 354px;
-    }
-  }
-  
-  @keyframes closed__Device {
-    0% {
-      height: 354px;
-    }
-    100% {
-      height: 180px;
-    }
-  }
-  @keyframes open__expanded {
-    0% {
-      height: 164px;
-    }
-    100% {
-      height: 253px;
-    }
-  }
-  
-  @keyframes closed__brands {
-    0% {
-      height: 253px;
-    }
-    100% {
-      height: 164px;
-    }
-  }
+
 .brands__item {
     width: 240px;
 }
