@@ -1,0 +1,30 @@
+
+@import '../scss/style.css';
+@import '../scss/feedback.scss';
+@import '../scss/index.css';
+@import '../scss/fonts.scss';
+@import '../scss/services.css';
+
+@import '/node_modules/swiper/swiper.css';
+
+.about__more {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.about__more-text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+}
+
+@media (min-width: 768px) {
+    .about__more {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0 0 0;
+    }    
+}
+
