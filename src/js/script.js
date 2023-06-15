@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-const handleClick = (event) => {
+const handleClick = () => {
   if (container.classList.contains("expanded")) {
 	showMoreButton.textContent = "Показать всё";
   } else {
@@ -33,7 +33,7 @@ showMoreButton.onclick = function() {
 	container.classList.toggle("expanded");
 }
 
-const showMore = (event) => {
+const showMore = () => {
 	if (containerDevice.classList.contains("expanded__Device")) {
 		showMoreButtonDevice.textContent = "Показать всё";
 	} else {
@@ -51,7 +51,7 @@ showMoreButtonDevice.onclick = function() {
 
 
 
-const textContent = (event) => {
+const textContent = () => {
 	if (aboutText.classList.contains("open__about")) {
 		aboutShowMore.textContent = "Читать далее";
 	} else {
@@ -59,12 +59,12 @@ const textContent = (event) => {
 	}
   };
 
-const openMore = (event) => {
+const openMore = () => {
 	aboutText.classList.toggle("open__about");
   	iconMain.classList.toggle("rotate");
 };
 
-const commaVis = (event) => {
+const commaVis = () => {
   if (window.innerWidth > 768) {
     comma.classList.toggle("comma__hidden");
   }	
